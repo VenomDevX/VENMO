@@ -1,0 +1,6 @@
+{
+  "name": "Kinetik | Motion & Code",
+  "description": "A sharp, minimalist, high-performance portfolio for motion graphics and developer resources. Black and white, brutalist design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
