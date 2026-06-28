@@ -1,20 +1,54 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+  <h1>V E N M O &nbsp; S T U D I O</h1>
+  <p><strong>A Kinetic, High-End Digital Motion Portfolio</strong></p>
 </div>
 
-# Run and deploy your AI Studio app
+<br />
 
-This contains everything you need to run your app locally.
+## 🌐 Overview
+**Venmo Studio** is a state-of-the-art portfolio website engineered to showcase digital design and motion graphics. It features smooth page transitions, custom cursors, noise overlays, and glitch text effects to create an immersive, futuristic aesthetic.
 
-View your app in AI Studio: https://ai.studio/apps/ede04dd8-6e8b-4099-88aa-9fcf1630c196
+## ⚡ Tech Stack
+- **Framework:** React 18 & Vite
+- **Styling:** Tailwind CSS (with custom utility classes)
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Language:** TypeScript
 
-## Run Locally
+## 🚀 Getting Started
 
-**Prerequisites:**  Node.js
+To run this project locally, make sure you have Node.js installed.
 
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/VenomDevX/VENMO.git
+   cd VENMO
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the URL provided in your terminal (usually `http://localhost:5173`).
+
+## 📁 Project Highlights
+- **Custom Cursor:** Inverse styling and reactive states on hover.
+- **Glitch Text:** Custom CSS animations for a cyberpunk feel.
+- **Video Previews:** Auto-playing video backgrounds for project cards.
+- **Code Snippet Overlay:** Toggleable raw code views using Vite's `?raw` loader.
+
+## 🔗 Connect
+- [GitHub: @VenomDevX](https://github.com/VenomDevX)
+- [LinkedIn: Parth Sharma](https://www.linkedin.com/in/parth-sharma-b96661245/)
+- [Reddit: u/Venom-DevX](https://www.reddit.com/user/Venom-DevX/)
+
+---
+<div align="center">
+  <p>&copy; 2026 VENMO STUDIO // AESTHETIC LOGIC</p>
+</div>
