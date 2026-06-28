@@ -1,5 +1,9 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
+import vid1 from '../../1.mp4';
+import vid2 from '../../2.mp4';
+import vid3 from '../../3.mp4';
 
 export default function Highlights() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -10,9 +14,6 @@ export default function Highlights() {
 
   const x1 = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const x2 = useTransform(scrollYProgress, [0, 1], ["-50%", "0%"]);
-  
-  const rotate1 = useTransform(scrollYProgress, [0, 1], [0, 360]);
-  const rotate2 = useTransform(scrollYProgress, [0, 1], [0, -360]);
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8]);
 
   return (
@@ -40,78 +41,46 @@ export default function Highlights() {
 
       <div className="px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10 max-w-[100rem] mx-auto">
         {/* Graphic Card 1 */}
-        <div className="col-span-1 md:col-span-2 h-[60vh] border border-white/20 relative overflow-hidden group hover-target bg-black">
-          <div className="absolute inset-0 flex items-center justify-center p-10">
-            <motion.div 
-              style={{ rotate: rotate1 }} 
-              className="w-full aspect-square max-w-[300px] border border-white/40 flex items-center justify-center"
-            >
-              <motion.div 
-                style={{ rotate: rotate2 }}
-                className="w-[60%] aspect-square bg-white mix-blend-difference"
-              />
-            </motion.div>
-          </div>
-          <div className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end bg-gradient-to-t from-black to-transparent pointer-events-none">
-            <div className="font-mono text-xs tracking-widest uppercase text-white/50">
-              [01] Geometric Flow
+        <Link to="/work" className="col-span-1 md:col-span-2 h-[60vh] border border-white/20 relative overflow-hidden group hover-target bg-black block cursor-pointer">
+          <video src={vid1} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out" />
+          <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
+            <div className="font-mono text-xs tracking-widest uppercase text-white/80 group-hover:text-white transition-colors">
+              [01] DARK SMOKE BACKGROUND
             </div>
-            <div className="w-12 h-12 border border-white/20 flex items-center justify-center">
+            <div className="w-12 h-12 border border-white/20 flex items-center justify-center bg-black/50 backdrop-blur-sm">
               <div className="w-2 h-2 bg-white rounded-full group-hover:scale-150 transition-transform" />
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* Graphic Card 2 */}
-        <div className="col-span-1 h-[60vh] border border-white/20 relative overflow-hidden group hover-target bg-white text-black">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <motion.div 
-              animate={{ 
-                scale: [1, 1.5, 1],
-                borderRadius: ["0%", "50%", "0%"]
-              }}
-              transition={{ 
-                duration: 4, 
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="w-1/2 aspect-square bg-black"
-            />
-          </div>
-          <div className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end mix-blend-difference text-white pointer-events-none">
-            <div className="font-mono text-xs tracking-widest uppercase">
-              [02] Shape Morph
+        <Link to="/work" className="col-span-1 h-[60vh] border border-white/20 relative overflow-hidden group hover-target bg-black block cursor-pointer text-white">
+          <video src={vid2} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out" />
+          <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
+            <div className="font-mono text-xs tracking-widest uppercase text-white/80 group-hover:text-white transition-colors">
+              [02] LIGHT SMOKE BACKGROUND
             </div>
-            <div className="w-12 h-12 border border-white/20 flex items-center justify-center">
+            <div className="w-12 h-12 border border-white/20 flex items-center justify-center bg-black/50 backdrop-blur-sm">
               <div className="w-2 h-2 bg-white rounded-full group-hover:scale-150 transition-transform" />
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* Graphic Card 3 */}
-        <div className="col-span-1 h-[60vh] border border-white/20 relative overflow-hidden group hover-target bg-black">
-          <div className="absolute inset-0 flex flex-col justify-center gap-4 p-10">
-            {[...Array(7)].map((_, i) => (
-              <motion.div 
-                key={i}
-                initial={{ x: -100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="h-[2px] w-full bg-white"
-                style={{ width: `${100 - i * 12}%` }}
-              />
-            ))}
-          </div>
-          <div className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end pointer-events-none">
-            <div className="font-mono text-xs tracking-widest uppercase text-white/50">
-              [03] Linear Dynamics
+        <Link to="/work" className="col-span-1 h-[60vh] border border-white/20 relative overflow-hidden group hover-target bg-black block cursor-pointer">
+          <video src={vid3} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out" />
+          <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end bg-gradient-to-t from-black to-transparent pointer-events-none z-10">
+            <div className="font-mono text-xs tracking-widest uppercase text-white/80 group-hover:text-white transition-colors">
+              [03] VERTICAL GLITCH
             </div>
-            <div className="w-12 h-12 border border-white/20 flex items-center justify-center">
+            <div className="w-12 h-12 border border-white/20 flex items-center justify-center bg-black/50 backdrop-blur-sm">
               <div className="w-2 h-2 bg-white rounded-full group-hover:scale-150 transition-transform" />
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* Graphic Card 4 */}
         <div className="col-span-1 md:col-span-2 h-[60vh] border border-white/20 relative overflow-hidden group hover-target bg-black">

@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="flex gap-8">
         {[
           { name: 'Home', path: '/' },
-          { name: 'Projects', path: '/work' },
+          { name: 'Motion', path: '/work' },
           { name: 'Studio', path: '/studio' },
           { name: 'Contact', path: '/contact' }
         ].map((item) => (
