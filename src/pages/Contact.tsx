@@ -33,36 +33,28 @@ export default function Contact() {
             <div className="flex flex-col gap-2">
               <span className="text-white/50">DIRECT LINK</span>
               <a
-                href="mailto:hello@venmo.studio"
+                href="https://www.venomdevx.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white/70 transition-colors inline-flex items-center gap-2 w-fit hover-target"
               >
-                HELLO@VENMO.STUDIO <ArrowUpRight className="w-4 h-4" />
+                WWW.VENOMDEVX.DEV <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-white/50">COORDINATES</span>
               <span>
-                40.7128° N, 74.0060° W<br />
-                NEW YORK CITY, NY
+                28.5355° N, 77.3910° E<br />
+                NCR, INDIA
               </span>
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-white/50">COMMUNICATION FREQUENCIES</span>
               <div className="flex gap-4">
                 <a
-                  href="#"
-                  className="hover:text-white/70 transition-colors hover-target"
-                >
-                  TWITTER / X
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-white/70 transition-colors hover-target"
-                >
-                  INSTAGRAM
-                </a>
-                <a
-                  href="#"
+                  href="https://github.com/VenomDevX"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-white/70 transition-colors hover-target"
                 >
                   GITHUB
@@ -142,7 +134,12 @@ export default function Contact() {
 
       {/* Footer Info at the very bottom */}
       <div className="mt-24 pt-10 border-t border-white/20 flex flex-col md:flex-row justify-between items-center font-mono text-xs tracking-widest text-white/50 uppercase relative z-10 w-full">
-        <p className="mt-6 md:mt-0">&copy; {new Date().getFullYear()} VENMO STUDIO</p>
+        <p className="mt-6 md:mt-0">
+          &copy; {new Date().getFullYear()} VENMO STUDIO | BUILT BY{" "}
+          <a href="https://github.com/VenomDevX" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hover-target">
+            VENOMDEVX
+          </a>
+        </p>
         
         {/* Social Links */}
         <div className="flex items-center gap-6 mt-6 md:mt-0 md:-translate-y-1">

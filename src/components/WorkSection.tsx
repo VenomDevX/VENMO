@@ -257,7 +257,12 @@ export default function WorkSection() {
 
       {/* Footer Info at the very bottom */}
       <div className="mt-32 pt-10 border-t border-white/20 flex flex-col md:flex-row justify-between items-center font-mono text-xs tracking-widest text-white/50 uppercase relative z-10 w-full">
-        <p className="mt-6 md:mt-0">&copy; {new Date().getFullYear()} VENMO STUDIO</p>
+        <p className="mt-6 md:mt-0">
+          &copy; {new Date().getFullYear()} VENMO STUDIO | BUILT BY{" "}
+          <a href="https://github.com/VenomDevX" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hover-target">
+            VENOMDEVX
+          </a>
+        </p>
         
         {/* Social Links */}
         <div className="flex items-center gap-6 mt-6 md:mt-0 md:-translate-y-1">

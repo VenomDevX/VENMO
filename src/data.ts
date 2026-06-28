@@ -1,6 +1,6 @@
-import vid1 from '../1.mp4';
-import vid2 from '../2.mp4';
-import vid3 from '../3.mp4';
+import vid1 from '../motion video/1.mp4';
+import vid2 from '../motion video/2.mp4';
+import vid3 from '../motion video/3.mp4';
 import code1 from './snippets/01.txt?raw';
 import code2 from './snippets/02.txt?raw';
 import code3 from './snippets/03.txt?raw';

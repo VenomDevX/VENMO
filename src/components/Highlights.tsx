@@ -1,9 +1,9 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import vid1 from '../../1.mp4';
-import vid2 from '../../2.mp4';
-import vid3 from '../../3.mp4';
+import vid1 from '../../motion video/1.mp4';
+import vid2 from '../../motion video/2.mp4';
+import vid3 from '../../motion video/3.mp4';
 
 export default function Highlights() {
   const containerRef = useRef<HTMLDivElement>(null);
