@@ -45,7 +45,7 @@ To run this project locally, make sure you have Node.js installed.
 
 ## 🔗 Connect
 - [GitHub: @VenomDevX](https://github.com/VenomDevX)
-- [LinkedIn: Parth Sharma](https://www.linkedin.com/in/parth-sharma-b96661245/)
+- [LinkedIn: Parth Sharma](https://www.linkedin.com/in/parthsharma-venomdevx/)
 - [Reddit: u/Venom-DevX](https://www.reddit.com/user/Venom-DevX/)
 
 ---

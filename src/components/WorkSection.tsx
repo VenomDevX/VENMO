@@ -269,7 +269,7 @@ export default function WorkSection() {
           <a href="https://github.com/VenomDevX" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hover-target" aria-label="GitHub">
             <Github className="w-5 h-5" />
           </a>
-          <a href="https://www.linkedin.com/in/parth-sharma-b96661245/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hover-target" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/parthsharma-venomdevx/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hover-target" aria-label="LinkedIn">
             <Linkedin className="w-5 h-5" />
           </a>
           <a href="https://www.reddit.com/user/Venom-DevX/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hover-target" aria-label="Reddit">
